@@ -2,6 +2,7 @@ import React from "react";
 import unsplash from "../api/unsplash";
 import SearchBar from "./Search";
 import InageList from "./ImageList";
+import Footer from "./Footer";
 import "./bg.css";
 
 export default class App extends React.Component {
@@ -27,6 +28,7 @@ export default class App extends React.Component {
         <SearchBar submitText={this.onSearchSubmit} />
         <h2>Found {this.state.images.length} images.</h2>
         <InageList images={this.state.images}></InageList>
+        <Footer></Footer>
       </div>
     );
   }
