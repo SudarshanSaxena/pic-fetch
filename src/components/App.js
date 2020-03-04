@@ -26,7 +26,7 @@ export default class App extends React.Component {
         style={{ marginTop: "10px", backgroundColor: "" }}
       >
         <SearchBar submitText={this.onSearchSubmit} />
-        <h2 style={{ color: "white", gridArea: "footer" }}>
+        <h2 style={{ color: "white", gridArea: "footer", padding: "15px" }}>
           Found {this.state.images.length} images.
         </h2>
         <InageList images={this.state.images}></InageList>
